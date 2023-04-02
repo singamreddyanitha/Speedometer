@@ -1,81 +1,100 @@
 /* Write your CSS here */
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0px;
-}
-
-.bgContainer {
-  background-color: #07080c;
-  height: 100vh;
-  background-size: cover;
+.speedometer-app-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #07080c;
+  height: 100vh;
 }
+
+.speedometer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .heading {
   color: #ffffff;
   font-family: 'Roboto';
-  font-size: 40px;
-  font-weight: 600;
-}
-.image-logo {
-  height: 300px;
-  width: 300px;
-}
-.indication {
-  color: #cbd5e1;
-  font-family: 'Roboto';
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.description {
-  color: #94a3b8;
-  font-family: 'Roboto';
-  font-size: 30px;
-}
-.button1 {
-  background-color: #0b69ff;
-  height: 45px;
-  width: 90px;
-  border-radius: 8px;
-  border-width: 0px;
-  color: #94a3b8;
-}
-.button2 {
-  color: #94a3b8;
-  border-color: #94a3b8;
-  height: 45px;
-  width: 90px;
-  border-radius: 8px;
-  border-width: 0px;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
-  .bgContainer {
-    background-color: #07080c;
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .heading {
-    font-size: 60px;
+    font-size: 48px;
   }
-  .image-logo {
-    height: 500px;
-    width: 500px;
-  }
-  .indication {
-    font-size: 35px;
-  }
+}
 
-  .description {
-    font-size: 30px;
+.speedometer-image {
+  width: 300px;
+  height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .speedometer-image {
+    width: 700px;
+    height: 300px;
   }
+}
+
+.speed-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .speed-text {
+    font-size: 32px;
+  }
+}
+
+.speed-limits {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .speed-limits {
+    font-size: 16px;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.accelerate-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.apply-brake-button {
+  color: #94a3b8;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid #94a3b8;
 }
